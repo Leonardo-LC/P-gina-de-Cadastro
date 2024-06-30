@@ -1,2 +1,2 @@
-# P-gina-de-Cadastro
+# Pagina-de-Cadastro
 Colocando alguns estudos de HTML5 e CSS3 em prática.
