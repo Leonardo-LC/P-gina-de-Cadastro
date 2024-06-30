@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+    <link rel="stylesheet" href="Cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 class="titulos">Seja bem-vindo</h1>
+    <h2 class="titulos">Faça o cadastro abaixo</h2>
+    
+    <form action="" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            
+            <label class="info"> 
+                Nome completo <br>
+                <input type="text" name="name" autofocus placeholder="Nome completo" required minlength="3"/>
+            </label>
+
+            <label class="info"> 
+                Cpf <br>
+                <input type="number" placeholder="Número de cpf" name="cpf" required minlength="3"/>
+            </label>
+
+            <label class="info"> 
+                Foto <br>
+                <input type="file" name="photo" accept="image/*"/>
+            </label>
+
+            <label class="info"> 
+                Currículo <br>
+                <input type="file" name="curriculum" accept="application/pdf"/>
+            </label>
+
+            <label class="info"> 
+                E-mail <br>
+                <input type="email" placeholder="Endereço de e-mail" name="email">
+            </label>
+
+            <label class="info"> 
+                Data de nascimento <br>
+                <input type="date" name="bday">
+            </label>
+
+            <label class="info"> 
+                Sexo <br>
+                <select name="order">
+                    <option></option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>                
+            </label>
+
+            <label class="info"> 
+                <input type="checkbox" name="termos" required>
+                Li e concordo com os <a href="https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/pt-br" target="_blank">termos</a>
+            </label>
+            
+            <label class="info"> 
+                Cargo desejado <br>
+                <select name="jobtag">
+                    <option></option>
+                    <option>Desenvolvedor frontend</option>
+                    <option>Gerente</option>
+                    <option>Estagiário</option>
+                    <option>Balconista</option>
+                </select>                
+            </label>
+            
+            <label class="info"> 
+                <input type="submit" name="enviar" value="Salvar e enviar">
+            </label>
+
+            <label>
+                O quanto você está animado?
+                <input type="range" value="10"/>
+
+            </label>
+
+        </fieldset>
+    </form>
+
+    <h2 class="titulos">Uma previa de nosso ambiente</h2>
+        <video  autoplay loop preload="auto" muted>
+            <source src="office.mp4">
+        </video>
+
+    <footer>
+        Todos os direitos reservados
+        <address class="direitos">
+            Site feito por <a  href="https://www.instagram.com/_leonardo_lc/?igsh=NmxwMmxuajZ4c2My">Leonardo Lopes</a> <br>
+            email para contato <br>
+            Brasília df
+        </address>
+    </footer>
+</body>
+</html>
